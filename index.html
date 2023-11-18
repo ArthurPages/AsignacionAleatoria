@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asignación de Equipos de Fútbol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Asignación de Equipos Aleatorios App</h1>
+    <div id="asignacionEquipos">
+      <div class="formulario">
+        <label for="numEquipos">Cantidad de Equipos:</label>
+        <input type="number" id="numEquipos">
+
+        <label for="jugadoresPorEquipo">Jugadores por Equipo:</label>
+        <input type="number" id="jugadoresPorEquipo">
+
+        <button onclick="crearEquipos()">Crear Equipos</button>
+      </div>
+    </div>
+
+    <div id="jugadoresInput" style="display: none;">
+      <h2>Ingrese los nombres de los jugadores:</h2>
+      <div class="formulario">
+        <div id="inputsContainer"></div>
+        <button onclick="asignarEquipos()">Asignar Equipos</button>
+      </div>
+    </div>
+
+
+    <div id="resultado" style="display: none;">
+      <h2>Equipos Asignados:</h2>
+      <div id="equipos"></div> <br>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
