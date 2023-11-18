@@ -1,3 +1,119 @@
+/*@font-face {
+  font-family: 'GenshinImpact';
+  src: url('assets/genshinFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes beat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+body {
+  background-image: url('assets/genshin-cerezo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'GenshinImpact', sans-serif;
+  color: #bf8eb7;
+  font-size: x-large;
+}
+
+.container {
+  text-align: center;
+}
+
+.formulario {
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.formulario label {
+  color: #bf8eb7;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario label:hover {
+  color: #ca78bc;
+  animation: beat 0.7s infinite;
+}
+
+.formulario input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  font-family: 'GenshinImpact', sans-serif;
+  font-size: large;
+  background-color: #bf8eb7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #ca78bc;
+  animation: beat 0.7s infinite;
+}
+
+h1 {
+  font-family: 'GenshinImpact', sans-serif;
+  font-size: xx-large;
+  color: #bf8eb7;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  padding: 30px;
+}
+
+h2 {
+  font-family: 'GenshinImpact', sans-serif;
+  font-size: x-large;
+  color: #bf8eb7;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+
+  margin: 20px;
+  padding: 30px;
+}
+
+#resultado {
+  font-family: 'GenshinImpact', sans-serif;
+  font-size: x-large;
+  color: #bf8eb7;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+}
+
+div {
+  border-radius: 15px;
+  box-shadow: 10px;
+}
+
+h1:hover {
+  color: #ca78bc;
+}
+*/
 @font-face {
   font-family: 'GenshinImpact';
   src: url('assets/genshinFont.ttf') format('truetype');
@@ -92,7 +208,6 @@ h2 {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
-  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
   margin: 20px;
   padding: 30px;
 }
@@ -103,14 +218,27 @@ h2 {
   color: #bf8eb7;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
-  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
 }
 
-div {
-  border-radius: 15px;
-  box-shadow: 10px;
-}
+/* Reglas de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .formulario {
+    width: 80%;
+    max-width: 90%; /* Ajustes para pantallas más pequeñas */
+  }
 
-h1:hover {
-  color: #ca78bc;
+  h1 {
+    font-size: x-large;
+    padding: 20px; /* Ajustes para pantallas más pequeñas */
+  }
+
+  h2 {
+    font-size: large;
+    padding: 20px; /* Ajustes para pantallas más pequeñas */
+  }
+
+  #resultado {
+    font-size: large;
+    padding: 20px; /* Ajustes para pantallas más pequeñas */
+  }
 }
