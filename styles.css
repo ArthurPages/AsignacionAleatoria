@@ -223,47 +223,32 @@ h2 {
 /* Reglas de medios para pantallas más pequeñas */
 @media (max-width: 768px) {
   .formulario {
-    width: 90%;
-    max-width: 90%;
-    padding: 20px;
+    width: 90%; /* Aumentar el ancho del formulario */
+    max-width: 100%; /* Ajustar al ancho máximo */
+    padding: 15px; /* Reducir el relleno */
+  }
+
+  .formulario input {
+    width: 100%; /* Utilizar todo el ancho disponible */
+  }
+
+  .formulario button {
+    font-size: medium; /* Reducir el tamaño del botón */
+    padding: 8px 15px; /* Reducir el relleno del botón */
   }
 
   h1 {
-    font-size: x-large;
-    padding: 20px;
+    font-size: large; /* Reducir el tamaño del título */
+    padding: 15px; /* Reducir el relleno */
   }
 
   h2 {
-    font-size: large;
-    padding: 20px;
+    font-size: medium; /* Reducir el tamaño del subtítulo */
+    padding: 15px; /* Reducir el relleno */
   }
 
   #resultado {
-    font-size: large;
-    padding: 20px;
-  }
-
-  .formulario input,
-  .formulario button {
-    font-size: medium;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  /* Evitar el zoom al enfocar los campos de entrada */
-  input[type="number"],
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  textarea,
-  select {
-    font-size: 16px;
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    font-size: medium; /* Reducir el tamaño del texto de resultado */
+    padding: 15px; /* Reducir el relleno */
   }
 }
